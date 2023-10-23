@@ -3,12 +3,12 @@ A geographical coordinate system is a framework used to specify locations on the
 
 **1. Latitude:**  Latitude is the angular distance north or south of the equator, measured in degrees. It ranges from -90 degrees (at the South Pole) to +90 degrees (at the North Pole). The equator is at 0 degrees latitude, and lines of latitude run parallel to it. Latitude is used to indicate how far north or south a location is from the equator.
 
-<p align="center"><img src="Latitude.png" alt="drawing" style="width:300px;"/>
+<p align="center"><img src="doc/Latitude.png" alt="drawing" style="width:300px;"/>
 
 
 **2. Longitude:** Longitude is the angular distance east or west of the Prime Meridian, which is an arbitrary line that runs from the North Pole to the South Pole. It is also measured in degrees and ranges from -180 degrees to +180 degrees. Lines of longitude intersect at the poles and are used to indicate how far east or west a location is from the Prime Meridian.
 
-<p align="center"><img src="Longitude.png" alt="drawing" style="width:300px;"/>
+<p align="center"><img src="doc/Longitude.png" alt="drawing" style="width:300px;"/>
 
 **3. Altitude:** Altitude, or elevation, is the vertical distance above or below a reference point, typically the Earth's surface. It is usually measured in meters or feet above sea level. Altitude is used to describe how high or low a point is relative to a specific reference point, like sea level.
 
