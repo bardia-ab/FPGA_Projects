@@ -6,6 +6,8 @@ UART is a simple and widely used serial communication protocol that offers versa
 ## Data Frame
 In UART communication, data is transmitted in packets known as "frames." Each UART frame consists of several components, including the start bit, data bits, optional parity bit, and stop bit(s).
 
+![packet](doc/packet.png)
+
 Here's a breakdown of the components of a UART frame:
 
 1. **Start Bit**: The start bit is always the first bit in a UART frame. It indicates the beginning of a data transmission. Its purpose is to inform the receiving device that a new data word is coming.
