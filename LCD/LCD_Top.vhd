@@ -32,13 +32,6 @@ architecture behavioral of LCD_Top is
         );
     end component;
 
-    constant    c_Function_Set      :   std_logic_vector(9 downto 0)    := "0000111100";
-    constant    c_Display_On_Off    :   std_logic_vector(9 downto 0)    := "0000001100";
-    constant    c_Display_Clear     :   std_logic_vector(9 downto 0)    := "0000000001";
-    constant    c_Entry_Mode_Set    :   std_logic_vector(9 downto 0)    := "0000000110";
-    constant    c_Shift_Display     :   std_logic_vector(9 downto 0)    := "0000011000";
-    constant    c_DDRAM_Address     :   std_logic_vector(9 downto 0)    := "0010000000";
-
     type t_Array is array(0 to 1) of string(0 to 39);
 
     signal  r_Lines         :   t_Array     := ("First Line Interface Project with FPGA!!", "Second Line of LCD Interface with FPGA!!");
