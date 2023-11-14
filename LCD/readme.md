@@ -1,6 +1,6 @@
 
 ## Diagram
-![Diagram](doc\LCD_Top.svg "Diagram")
+![Diagram](doc/LCD_Top.svg "Diagram")
 ## Ports
 
 | Port name | Direction | Type                         | Description |
