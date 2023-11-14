@@ -10,7 +10,7 @@ In UART communication, data is transmitted in packets known as "frames." Each UA
 
 Here's a breakdown of the components of a UART frame:
 
-1. **Start Bit**: The start bit is always the first bit in a UART frame. It indicates the beginning of a data transmission. Its purpose is to inform the receiving device that a new data word is coming.
+1. **Start BitTh**: e start bit is always the first bit in a UART frame. It indicates the beginning of a data transmission. Its purpose is to inform the receiving device that a new data word is coming.
 
 2. **Data Bits**: Data bits represent the actual information being transmitted. The number of data bits in a frame can vary, commonly being 7 or 8 bits. In some cases, it can be 5 or 6 bits.
 
