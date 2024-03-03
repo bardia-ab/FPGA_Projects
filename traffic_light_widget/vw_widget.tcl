@@ -5,6 +5,7 @@
 catch {namespace delete vwWidget}
 
 namespace eval ::vwWidget {
+  variable pngPath "PNGs"
   
   proc isSimulationStarted {} {
     variable tbEnt
@@ -25,7 +26,7 @@ namespace eval ::vwWidget {
       set state IDLE
     }
 
-    set imgFile "PNGs/$state.png"
+    set imgFile "$::vwWidget::pngPath/$state.png"
     image create photo flowChartImg -file $imgFile
   }
 
@@ -54,72 +55,76 @@ namespace eval ::vwWidget {
         
       }
     }
+  }
 
-    proc startTB {} {
-      variable tbLib "work"
-      variable tbEnt "traffic_lights_tb"
+  proc startTB {} {
+    variable tbLib "work"
+    variable tbEnt "traffic_lights_tb"
 
-      # if the simulation is already ungoing
-      if [isSimulationStarted] {
-        echo "Restarting the simulation"
-        restart -force
+    # if the simulation is already ungoing
+    if [isSimulationStarted] {
+      echo "Restarting the simulation"
+      restart -force
 
-      } else {
-        echo "Starting a new simulation"
-        vsim -gui -onfinish stop -msgmode both -voptargs=+acc "$tbLib.$tbEnt"
-
-      }
-
-      # log all signalls, even if the waveform isn't open yet
-      log * -r
-
-      # update window
-      setFlowChartImg
-      enableOrDisableButtons
-      registerWhenCallback
-
-      # close any open waveform window
-      noview wave
-
-      # keep the window on top
-      focus .vwWidget
+    } else {
+      echo "Starting a new simulation"
+      vsim -gui -onfinish stop -msgmode both -voptargs=+acc "$tbLib.$tbEnt"
 
     }
 
-    proc quitTB {} {
-      echo "Quitting the simulation"
-      quit -sim
+    # log all signalls, even if the waveform isn't open yet
+    log * -r
 
-      # update window
-      setFlowChartImg
-      enableOrDisableButtons
+    # update window
+    setFlowChartImg
+    enableOrDisableButtons
+    registerWhenCallback
 
-      # keep the window on top
-      focus .vwWidget
+    # close any open waveform window
+    noview wave
 
+    # keep the window on top
+    focus .vwWidget
+
+  }
+
+  proc quitTB {} {
+    echo "Quitting the simulation"
+    quit -sim
+
+    # update window
+    setFlowChartImg
+    enableOrDisableButtons
+
+    # keep the window on top
+    focus .vwWidget
+
+  }
+
+  proc createProject {} {
+
+    set projectPath modelsim_proj
+    set projectName vw_tcl_widget
+    set srcFileName traffic_lights
+
+    # create/open project
+    if {[file exists "$projectPath/$projectName.mpf"]} {
+      project open "$projectPath/$projectName.mpf"
+
+    } else {
+      # create the modelsim directory
+      file mkdir $projectPath
+
+      project new $projectPath $projectName
+
+      # add sources
+      echo "adding files"
+      project addfile "../srcs/$srcFileName.vhd"
+      project addfile "../srcs/$srcFileName\_tb.vhd"
     }
 
-    proc createProject {} {
-
-      set projectPath modelsim_proj
-      set projectName vw_tcl_widget
-      set srcFileName traffic_lights
-
-      # create/open project
-      if {[file exists "$projectPath/$projectName.mpf"]} {
-        project open "$projectPath/$projectName.mpf"
-
-      } else {
-        # create the modelsim directory
-        file mkdir $projectPath
-
-        project new $projectPath $projectName
-
-        # add sources
-        echo "adding files"
-        project addfile "../srcs/$srcFileName.vhd"
-        project addfile "../srcs/$srcFileName\_tb.vhd"
-      }
+    # update PNG path
+    variable pngPath "../PNGs"
 
 	}
 	
@@ -129,39 +134,38 @@ namespace eval ::vwWidget {
 
       echo "Compilling VHDL files"
       project compileall
-    }
+  }
 
-    proc openWave {} {
-      
-      if {[lsearch [view] .main_pane.wave] == -1} {
-        echo "Openning waveforms"
-        do wave.do
+  proc openWave {} {
+    
+    if {[lsearch [view] .main_pane.wave] == -1} {
+      echo "Openning waveforms"
+      do "../wave.do"
 
-      } else {
-        echo "Reopenning waveforms"
-        noview wave
-        do wave.do
-        focus .main_pane.wave
+    } else {
+      echo "Reopenning waveforms"
+      noview wave
+      do "../wave.do"
+      focus .main_pane.wave
 
-      }     
-    }
+    }     
+  }
 
-    proc runOneState {} {
-      # match any state name
-      variable destStateExp {.*}
+  proc runOneState {} {
+    # match any state name
+    variable destStateExp {.*}
 
-      echo "Running through the current DUT state"
-      run -all
-    }
+    echo "Running through the current DUT state"
+    run -all
+  }
 
-    proc runAllState {} {
-      # match a specific state name
-      set currState [getState]
-      variable destStateExp "^$currState\$"
+  proc runAllState {} {
+    # match a specific state name
+    set currState [getState]
+    variable destStateExp "^$currState\$"
 
-      echo "Running through all DUT states"
-      run -all
-    }
+    echo "Running through all DUT states"
+    run -all
   }
 
   # close the widget if it's alreeady running
@@ -178,11 +182,12 @@ namespace eval ::vwWidget {
   variable tbLib "work"
   variable tbEnt "traffic_lights_tb"
 
+
   # communication variable
   variable destStateExp ""
 
   # header image widget
-  image create photo headerImg -file "PNGs/header.png"
+  image create photo headerImg -file "$pngPath/header.png"
   label .vwWidget.headerImg -image headerImg
 
   # button widgets
@@ -194,7 +199,7 @@ namespace eval ::vwWidget {
   button .vwWidget.runAllBtn  -width 30 -height 2 -text "Run All States" -command ::vwWidget::runAllState
 
   # footer image widget
-  image create photo flowChartImg -file "PNGs/IDLE.png"
+  image create photo flowChartImg -file "$pngPath/IDLE.png"
   label .vwWidget.flowChartImg -image flowChartImg
 
   # initialize buttons and footer image
