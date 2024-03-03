@@ -1,0 +1,617 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# source "C:/Users/t26607bb/Desktop/Practice/BFM/uart/vunit_out/test_output/vw_lib.uart_tb.test_uart_rx_5fbe7e636ba328f68d4a0db2d2d83dcfeabc8de6/modelsim/gui.do"
+# vsim -modelsimini C:/Users/t26607bb/Desktop/Practice/BFM/uart/vunit_out/modelsim/modelsim.ini -wlf C:/Users/t26607bb/Desktop/Practice/BFM/uart/vunit_out/test_output/vw_lib.uart_tb.test_uart_rx_5fbe7e636ba328f68d4a0db2d2d83dcfeabc8de6/modelsim/vsim.wlf -quiet -t ps -onfinish stop vw_lib.uart_tb(sim) -voptargs="+acc" -L vunit_lib -L vw_lib -g/uart_tb/runner_cfg="active python runner : true,enabled_test_cases : test_uart_rx,output path : C::/Users/t26607bb/Desktop/Practice/BFM/uart/vunit_out/test_output/vw_lib.uart_tb.test_uart_rx_5fbe7e636ba328f68d4a0db2d2d83dcfeabc8de6/,tb path : C::/Users/t26607bb/Desktop/Practice/BFM/uart/,use_color : false" 
+# Start time: 16:27:43 on Mar 01,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\Lib\site-packages\vunit\vhdl\string_ops\src\string_ops.vhd(456): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Warning: C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\Lib\site-packages\vunit\vhdl\string_ops\src\string_ops.vhd(533): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Warning: C:\Users\t26607bb\Desktop\Practice\BFM\uart\UART_Rx.vhd(127): (vopt-1167) Index value 9 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 8 downto 0.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "UART_Rx(rtl)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "UART_Tx(rtl)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_tb.test_uart_rx
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# ** Note: i_rx at idle: U
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 8690556 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 78135004 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#      78140000 ps - default              -    INFO - Transmitted data: 00000000
+# Break key hit
+# Simulation stop requested.
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart/UART_Rx.vhd 49 unknown [address 0x7ff4f6866eb0] Process line__45
+# 
+# 
+# Surrounding code from 'see' command
+#   1 : library ieee;
+#   2 : use ieee.std_logic_1164.all;
+#   3 : use ieee.numeric_std.all;
+#   4 : 
+# 
+# true
+add wave -position insertpoint  \
+sim:/uart_tb/rx \
+sim:/uart_tb/busy_bfm_tx \
+sim:/uart_tb/send_bfm \
+sim:/uart_tb/data_bfm_tx
+add wave -position insertpoint  \
+sim:/uart_tb/tx \
+sim:/uart_tb/busy_bfm_rx \
+sim:/uart_tb/valid_bfm \
+sim:/uart_tb/data_bfm_rx
+add wave -position insertpoint  \
+sim:/uart_tb/valid_rx \
+sim:/uart_tb/busy_rx \
+sim:/uart_tb/data_rx \
+sim:/uart_tb/rx
+add wave -position insertpoint  \
+sim:/uart_tb/busy_tx \
+sim:/uart_tb/tx \
+sim:/uart_tb/send \
+sim:/uart_tb/data_tx
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/t26607bb/Desktop/Practice/BFM/uart/wave.do
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_tb.test_uart_rx
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# ** Note: i_rx at idle: U
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 8690556 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 78135004 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#      78140000 ps - default              -    INFO - Transmitted data: 00000000
+# Break key hit
+# Simulation stop requested.
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart/UART_Rx.vhd 49 unknown [address 0x7ff4f6866eb0] Process line__45
+# 
+# 
+# Surrounding code from 'see' command
+#   1 : library ieee;
+#   2 : use ieee.std_logic_1164.all;
+#   3 : use ieee.numeric_std.all;
+#   4 : 
+# 
+# true
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_tb.test_uart_rx
+# Compiling into vw_lib: uart_tb.vhd passed
+# Compile passed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: i_rx at idle: U
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 8690556 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 78135004 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#      78140000 ps - default              -    INFO - Transmitted data: 00000000
+# Break key hit
+# Simulation stop requested.
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart/UART_Rx.vhd 49 unknown [address 0x7ff4f7349520] Process line__45
+# 
+# 
+# Surrounding code from 'see' command
+#   1 : library ieee;
+#   2 : use ieee.std_logic_1164.all;
+#   3 : use ieee.numeric_std.all;
+#   4 : 
+# 
+# true
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_tb.test_uart_rx
+# Compiling into vw_lib: uart_tb.vhd passed
+# Compile passed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: i_rx at idle: U
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 8690556 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 17371112 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 26051668 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 34732224 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 43412780 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 52093336 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 60773892 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000000
+#    Time: 69454448 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 78135004 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#      78140000 ps - default              -    INFO - Transmitted data: 00000000
+# ** Note: data to be transmit: 00000001
+#    Time: 95496116 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 1
+#    Time: 104176672 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 104176672 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 112857228 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 112857228 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 121537784 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 121537784 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 130218340 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 130218340 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 138898896 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 138898896 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 147579452 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 147579452 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 156260008 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000001
+#    Time: 156260008 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 164940564 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     164950000 ps - default              -    INFO - Transmitted data: 00000001
+# ** Note: data to be transmit: 00000010
+#    Time: 182301676 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 190982232 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 190982232 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 199662788 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 199662788 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 208343344 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 208343344 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 217023900 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 217023900 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 225704456 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 225704456 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 234385012 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 234385012 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 243065568 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000010
+#    Time: 243065568 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 251746124 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     251750000 ps - default              -    INFO - Transmitted data: 00000010
+# ** Note: data to be transmit: 00000011
+#    Time: 269107236 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 1
+#    Time: 277787792 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 277787792 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 286468348 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 286468348 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 295148904 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 295148904 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 303829460 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 303829460 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 312510016 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 312510016 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 321190572 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 321190572 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 329871128 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000011
+#    Time: 329871128 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 338551684 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     338560000 ps - default              -    INFO - Transmitted data: 00000011
+# ** Note: data to be transmit: 00000100
+#    Time: 355912796 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 364593352 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 364593352 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 373273908 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 373273908 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 381954464 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 381954464 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 390635020 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 390635020 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 399315576 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 399315576 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 407996132 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 407996132 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 416676688 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000100
+#    Time: 416676688 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 425357244 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     425360000 ps - default              -    INFO - Transmitted data: 00000100
+# ** Note: data to be transmit: 00000101
+#    Time: 442718356 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 1
+#    Time: 451398912 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 451398912 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 460079468 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 460079468 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 468760024 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 468760024 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 477440580 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 477440580 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 486121136 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 486121136 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 494801692 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 494801692 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 503482248 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000101
+#    Time: 503482248 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 512162804 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     512170000 ps - default              -    INFO - Transmitted data: 00000101
+# ** Note: data to be transmit: 00000110
+#    Time: 529523916 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 538204472 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 538204472 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 546885028 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 546885028 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 555565584 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 555565584 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 564246140 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 564246140 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 572926696 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 572926696 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 581607252 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 581607252 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 590287808 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000110
+#    Time: 590287808 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 598968364 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     598970000 ps - default              -    INFO - Transmitted data: 00000110
+# ** Note: data to be transmit: 00000111
+#    Time: 616329476 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 1
+#    Time: 625010032 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 625010032 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 633690588 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 633690588 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 642371144 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 642371144 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 651051700 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 651051700 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 659732256 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 659732256 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 668412812 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 668412812 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 677093368 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00000111
+#    Time: 677093368 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 685773924 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     685780000 ps - default              -    INFO - Transmitted data: 00000111
+# ** Note: data to be transmit: 00001000
+#    Time: 703135036 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 711815592 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 711815592 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 720496148 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 720496148 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 729176704 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 729176704 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 1
+#    Time: 737857260 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 737857260 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 746537816 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 746537816 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 755218372 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 755218372 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 763898928 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001000
+#    Time: 763898928 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 772579484 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     772580000 ps - default              -    INFO - Transmitted data: 00001000
+# ** Note: data to be transmit: 00001001
+#    Time: 789940596 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 1
+#    Time: 798621152 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 798621152 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 807301708 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 807301708 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 815982264 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 815982264 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 1
+#    Time: 824662820 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 824662820 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 833343376 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 833343376 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 842023932 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 842023932 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 850704488 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001001
+#    Time: 850704488 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 859385044 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     859390000 ps - default              -    INFO - Transmitted data: 00001001
+# ** Note: data to be transmit: 00001010
+#    Time: 876746156 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 0: 0
+#    Time: 885426712 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 885426712 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 894107268 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 894107268 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 902787824 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 902787824 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 1
+#    Time: 911468380 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 911468380 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 920148936 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 920148936 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 928829492 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 928829492 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 937510048 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: data to be transmit: 00001010
+#    Time: 937510048 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 946190604 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#     946200000 ps - default              -    INFO - Transmitted data: 00001010
+#     954871160 ps - default              -    INFO - UART_Rx tested successfully!!!
+# Break in Subprogram stop at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/run/src/run.vhd line 132
+# false
+# End time: 16:36:54 on Mar 01,2024, Elapsed time: 0:09:11
+# Errors: 0, Warnings: 1

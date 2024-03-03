@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# source "C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_tx_tb.test_1_c8c9780f4e704befe85a0fae3a468b60042b959b/modelsim/gui.do"
+# vsim -modelsimini C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/modelsim/modelsim.ini -wlf C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_tx_tb.test_1_c8c9780f4e704befe85a0fae3a468b60042b959b/modelsim/vsim.wlf -quiet -t ps -onfinish stop vw_lib.uart_tx_tb(sim) -voptargs="+acc" -L vunit_lib -L vw_lib -g/uart_tx_tb/runner_cfg="active python runner : true,enabled_test_cases : test_1,output path : C::/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_tx_tb.test_1_c8c9780f4e704befe85a0fae3a468b60042b959b/,tb path : C::/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/,use_color : false" 
+# Start time: 15:34:26 on Mar 01,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Sourcing file C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/wave.do from modelsim.init_file.gui
+# Sourcing C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/wave.do failed
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/uart_bfm_tb/DUT/i_data_tx'.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_tx_tb.test_1
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: i_rx at idle: U
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+#         20000 ps - default              -    INFO - Transmitted data: 00000001
+# ** Note: bit 0: 1
+#    Time: 13060834 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 21741390 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 30421946 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 39102502 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 47783058 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 56463614 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 65144170 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 73824726 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: received data: 00000001
+#    Time: 82505282 ps  Iteration: 0  Instance: /uart_tx_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 82505282 ps  Iteration: 1  Instance: /uart_tx_tb/UART_BFM_INST
+# Break key hit
+# Break in Architecture sim at C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_tx_tb.vhd line 32
+# End time: 15:37:46 on Mar 01,2024, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 0

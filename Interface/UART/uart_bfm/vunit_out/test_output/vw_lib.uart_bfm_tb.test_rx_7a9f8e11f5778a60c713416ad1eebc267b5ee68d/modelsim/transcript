@@ -1,0 +1,470 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# source "C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_bfm_tb.test_rx_7a9f8e11f5778a60c713416ad1eebc267b5ee68d/modelsim/gui.do"
+# vsim -modelsimini C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/modelsim/modelsim.ini -wlf C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_bfm_tb.test_rx_7a9f8e11f5778a60c713416ad1eebc267b5ee68d/modelsim/vsim.wlf -quiet -t ps -onfinish stop vw_lib.uart_bfm_tb(sim) -voptargs="+acc" -L vunit_lib -L vw_lib -g/uart_bfm_tb/runner_cfg="active python runner : true,enabled_test_cases : test_rx,output path : C::/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_bfm_tb.test_rx_7a9f8e11f5778a60c713416ad1eebc267b5ee68d/,tb path : C::/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/,use_color : false" 
+# Start time: 15:04:54 on Mar 01,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Sourcing file C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/wave.do from modelsim.init_file.gui
+# Sourcing C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/wave.do failed
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/uart_bfm_tb/busy'.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_rx
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: i_rx at idle: 1
+#    Time: 0 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#             0 ps - default              -    INFO - data to be transmit: 00000000
+#             0 ps - default              -    INFO - Packet: 1000000000
+#             0 ps - default              -    INFO - Transmitted bit: 0
+#       8680556 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 0: 0
+#    Time: 13020834 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      17361112 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 21701390 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      26041668 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 30381946 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      34722224 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 39062502 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      43402780 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 47743058 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      52083336 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 56423614 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      60763892 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 65104170 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      69444448 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 73784726 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      78125004 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000000
+#    Time: 82465282 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 82465282 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#      86905560 ps - default              -    INFO - data to be transmit: 00000001
+#      86905560 ps - default              -    INFO - Packet: 1000000010
+#      86905560 ps - default              -    INFO - Transmitted bit: 0
+#      95586116 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 0: 1
+#    Time: 99926394 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     104266672 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 108606950 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     112947228 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 117287506 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     121627784 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 125968062 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     130308340 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 134648618 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     138988896 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 143329174 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     147669452 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 152009730 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     156350008 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 160690286 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     165030564 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000001
+#    Time: 169370842 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 169370842 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     173811120 ps - default              -    INFO - data to be transmit: 00000010
+#     173811120 ps - default              -    INFO - Packet: 1000000100
+#     173811120 ps - default              -    INFO - Transmitted bit: 0
+#     182491676 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 0: 0
+#    Time: 186831954 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     191172232 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 1: 1
+#    Time: 195512510 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     199852788 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 204193066 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     208533344 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 212873622 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     217213900 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 221554178 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     225894456 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 230234734 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     234575012 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 238915290 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     243255568 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 247595846 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     251936124 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000010
+#    Time: 256276402 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 256276402 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     260716680 ps - default              -    INFO - data to be transmit: 00000011
+#     260716680 ps - default              -    INFO - Packet: 1000000110
+#     260716680 ps - default              -    INFO - Transmitted bit: 0
+#     269397236 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 0: 1
+#    Time: 273737514 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     278077792 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 1: 1
+#    Time: 282418070 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     286758348 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 291098626 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     295438904 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 299779182 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     304119460 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 308459738 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     312800016 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 317140294 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     321480572 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 325820850 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     330161128 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 334501406 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     338841684 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000011
+#    Time: 343181962 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 343181962 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     347622240 ps - default              -    INFO - data to be transmit: 00000100
+#     347622240 ps - default              -    INFO - Packet: 1000001000
+#     347622240 ps - default              -    INFO - Transmitted bit: 0
+#     356302796 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 0: 0
+#    Time: 360643074 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     364983352 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 369323630 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     373663908 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 2: 1
+#    Time: 378004186 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     382344464 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 386684742 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     391025020 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 395365298 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     399705576 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 404045854 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     408386132 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 412726410 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     417066688 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 421406966 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     425747244 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000100
+#    Time: 430087522 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 430087522 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     434527800 ps - default              -    INFO - data to be transmit: 00000101
+#     434527800 ps - default              -    INFO - Packet: 1000001010
+#     434527800 ps - default              -    INFO - Transmitted bit: 0
+#     443208356 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 0: 1
+#    Time: 447548634 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     451888912 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 456229190 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     460569468 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 2: 1
+#    Time: 464909746 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     469250024 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 473590302 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     477930580 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 482270858 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     486611136 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 490951414 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     495291692 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 499631970 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     503972248 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 508312526 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     512652804 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000101
+#    Time: 516993082 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 516993082 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+# Break in Subprogram stop at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/run/src/run.vhd line 132
+# false
+pwd
+# C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/modelsim
+do ../../wave.do
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/uart_bfm_tb/busy'.
+# Executing ONERROR command at macro ./../../wave.do line 3
+add wave -position insertpoint  \
+sim:/uart_bfm_tb/DUT/i_data_tx \
+sim:/uart_bfm_tb/DUT/i_send \
+sim:/uart_bfm_tb/DUT/o_busy_tx \
+sim:/uart_bfm_tb/DUT/o_tx
+add wave -position insertpoint  \
+sim:/uart_bfm_tb/DUT/i_rx \
+sim:/uart_bfm_tb/DUT/o_busy_rx \
+sim:/uart_bfm_tb/DUT/o_valid \
+sim:/uart_bfm_tb/DUT/o_data_rx
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/t26607bb/Desktop/Practice/BFM/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/wave.do
+run
+#     521433360 ps - default              -    INFO - data to be transmit: 00000000
+#     521433360 ps - default              -    INFO - Packet: 1000000000
+#     521433360 ps - default              -    INFO - Transmitted bit: 0
+run
+run
+run
+run
+run
+run
+run
+run
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_rx
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: i_rx at idle: 1
+#    Time: 0 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#             0 ps - default              -    INFO - data to be transmit: 00000000
+#             0 ps - default              -    INFO - Packet: 1000000000
+#             0 ps - default              -    INFO - Transmitted bit: 0
+#       8680556 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 0: 0
+#    Time: 13020834 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      17361112 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 21701390 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      26041668 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 30381946 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      34722224 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 39062502 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      43402780 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 47743058 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      52083336 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 56423614 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      60763892 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 65104170 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      69444448 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 73784726 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#      78125004 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000000
+#    Time: 82465282 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 82465282 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#      86905560 ps - default              -    INFO - data to be transmit: 00000001
+#      86905560 ps - default              -    INFO - Packet: 1000000010
+#      86905560 ps - default              -    INFO - Transmitted bit: 0
+#      95586116 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 0: 1
+#    Time: 99926394 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     104266672 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 108606950 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     112947228 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 117287506 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     121627784 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 125968062 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     130308340 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 134648618 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     138988896 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 143329174 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     147669452 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 152009730 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     156350008 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 160690286 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     165030564 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000001
+#    Time: 169370842 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 169370842 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     173811120 ps - default              -    INFO - data to be transmit: 00000010
+#     173811120 ps - default              -    INFO - Packet: 1000000100
+#     173811120 ps - default              -    INFO - Transmitted bit: 0
+#     182491676 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 0: 0
+#    Time: 186831954 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     191172232 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 1: 1
+#    Time: 195512510 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     199852788 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 204193066 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     208533344 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 212873622 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     217213900 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 221554178 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     225894456 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 230234734 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     234575012 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 238915290 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     243255568 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 247595846 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     251936124 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000010
+#    Time: 256276402 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 256276402 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     260716680 ps - default              -    INFO - data to be transmit: 00000011
+#     260716680 ps - default              -    INFO - Packet: 1000000110
+#     260716680 ps - default              -    INFO - Transmitted bit: 0
+#     269397236 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 0: 1
+#    Time: 273737514 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     278077792 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 1: 1
+#    Time: 282418070 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     286758348 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 2: 0
+#    Time: 291098626 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     295438904 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 299779182 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     304119460 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 308459738 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     312800016 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 317140294 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     321480572 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 325820850 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     330161128 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 334501406 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     338841684 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000011
+#    Time: 343181962 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 343181962 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     347622240 ps - default              -    INFO - data to be transmit: 00000100
+#     347622240 ps - default              -    INFO - Packet: 1000001000
+#     347622240 ps - default              -    INFO - Transmitted bit: 0
+#     356302796 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 0: 0
+#    Time: 360643074 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     364983352 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 369323630 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     373663908 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 2: 1
+#    Time: 378004186 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     382344464 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 386684742 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     391025020 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 395365298 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     399705576 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 404045854 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     408386132 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 412726410 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     417066688 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 421406966 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     425747244 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000100
+#    Time: 430087522 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 430087522 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+#     434527800 ps - default              -    INFO - data to be transmit: 00000101
+#     434527800 ps - default              -    INFO - Packet: 1000001010
+#     434527800 ps - default              -    INFO - Transmitted bit: 0
+#     443208356 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 0: 1
+#    Time: 447548634 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     451888912 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 1: 0
+#    Time: 456229190 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     460569468 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: bit 2: 1
+#    Time: 464909746 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     469250024 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 3: 0
+#    Time: 473590302 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     477930580 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 4: 0
+#    Time: 482270858 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     486611136 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 5: 0
+#    Time: 490951414 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     495291692 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 6: 0
+#    Time: 499631970 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     503972248 ps - default              -    INFO - Transmitted bit: 0
+# ** Note: bit 7: 0
+#    Time: 508312526 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+#     512652804 ps - default              -    INFO - Transmitted bit: 1
+# ** Note: received data: 00000101
+#    Time: 516993082 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: i_rx at idle: 1
+#    Time: 516993082 ps  Iteration: 1  Instance: /uart_bfm_tb/DUT
+# Break in Subprogram stop at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/run/src/run.vhd line 132
+# false
+# End time: 15:09:20 on Mar 01,2024, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 0

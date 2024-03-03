@@ -1,0 +1,480 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# source "C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_bfm_tb.test_1_f6545679c5d4a6d5489a0ed0fcb93d3df3fcc408/modelsim/gui.do"
+# vsim -modelsimini C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/modelsim/modelsim.ini -wlf C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_bfm_tb.test_1_f6545679c5d4a6d5489a0ed0fcb93d3df3fcc408/modelsim/vsim.wlf -quiet -t ps -onfinish stop vw_lib.uart_bfm_tb(sim) -voptargs="+acc" -L vunit_lib -L vw_lib -g/uart_bfm_tb/runner_cfg="active python runner : true,enabled_test_cases : test_1,output path : C::/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/vunit_out/test_output/vw_lib.uart_bfm_tb.test_1_f6545679c5d4a6d5489a0ed0fcb93d3df3fcc408/,tb path : C::/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/,use_color : false" 
+# Start time: 16:34:43 on Feb 28,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Sourcing file C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/wave.do from modelsim.init_file.gui
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm_tb.vhd 48 unknown [address 0x7ff4f689ea90] ForLoop loop
+# 
+# 
+# Surrounding code from 'see' command
+#   1 : library ieee;
+#   2 : use ieee.std_logic_1164.all;
+#   3 : use ieee.numeric_std.all;
+#   4 : 
+# 
+# true
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Break in Process SEQUENCER_PROC at C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm_tb.vhd line 45
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm_tb.vhd 45 line [address 0x7ff4f689e98b] Process SEQUENCER_PROC
+# 
+# 
+# Surrounding code from 'see' command
+#   40 :   begin
+#   41 :     -- vunit setup
+#   42 :     test_runner_setup(runner, runner_cfg);
+#   43 : 
+#   44 :     if run("test_1") then
+# ->45*:       wait for 10 ms;
+#   46 : 
+#   47 :       for i in 0 to 5 loop
+#   48 :         wait until busy = '0';
+#   49 :         send <= '1';
+# 
+# true
+step -over
+# Next activity is in 10 ms.
+step -over
+step -over
+step -over
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+run -continue
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm_tb.vhd passed
+# Compile passed
+# Re-compile finished
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Break in Process SEQUENCER_PROC at C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm_tb.vhd line 49
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm_tb.vhd 49 line [address 0x7ff4f7427f60] Process SEQUENCER_PROC
+# 
+# 
+# Surrounding code from 'see' command
+#   44 :     if run("test_1") then
+#   45*:       send <= '1';
+#   46 :       wait for clk_period;
+#   47 :       send <= '0';
+#   48 : 
+# ->49*:       for i in 0 to 5 loop
+#   50 :         wait until busy = '0';
+#   51 :         data_tx <= std_logic_vector(unsigned(data_tx) + 1);
+#   52 :         send <= '1';
+#   53 :         wait for clk_period;
+# 
+# true
+run -continue
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Re-compile not needed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm_tb.vhd 50 unknown [address 0x7ff4f7427fe0] ForLoop loop
+# 
+# 
+# Surrounding code from 'see' command
+#   1 : library ieee;
+#   2 : use ieee.std_logic_1164.all;
+#   3 : use ieee.numeric_std.all;
+#   4 : 
+# 
+# true
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm_tb.vhd passed
+# Compile passed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Break in Process PROC_TX at C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm.vhd line 40
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm.vhd 40 line [address 0x7ff4f7925b61] Process PROC_TX
+# 
+# 
+# Surrounding code from 'see' command
+#   35 :     o_tx <= '1';
+#   36 : 
+#   37 :     wait until rising_edge(i_send);
+#   38 : 
+#   39 :     -- start bit
+# ->40*:     o_busy_tx <= '1';
+#   41 :     o_tx <= '0';
+#   42 :     wait for c_data_width;
+#   43 : 
+#   44 :     -- data transmission
+# 
+# true
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+step -over
+run -continue
+# Break in Process PROC_TX at C:/Users/t26607bb/Desktop/Practice/BFM/uart_bfm/uart_bfm.vhd line 40
+run -continue
+# Break in Subprogram stop at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/run/src/run.vhd line 132
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm.vhd    failed
+# === Command used: ===
+# C:\intelFPGA\23.1std\questa_fse\win64\vcom -quiet -modelsimini C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\vunit_out\modelsim\modelsim.ini -2008 -work vw_lib C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd
+# 
+# === Command output: ===
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(46): (vcom-1136) Unknown identifier "info".
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Attribute "image" requires a parameter.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Prefix (constant "i") for attribute "image" is not a type mark.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Attribute "image" requires a parameter.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Prefix (signal [mode OUT port] "o_tx") for attribute "image" is not a type mark.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): (vcom-1136) Unknown identifier "info".
+# 
+# ** Note: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(58): VHDL Compiler exiting
+# 
+# 
+# Compile failed
+# Re-compile failed
+# child process exited abnormally
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm.vhd    failed
+# === Command used: ===
+# C:\intelFPGA\23.1std\questa_fse\win64\vcom -quiet -modelsimini C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\vunit_out\modelsim\modelsim.ini -2008 -work vw_lib C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd
+# 
+# === Command output: ===
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Attribute "image" requires a parameter.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Prefix (constant "i") for attribute "image" is not a type mark.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Attribute "image" requires a parameter.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Prefix (signal [mode OUT port] "o_tx") for attribute "image" is not a type mark.
+# 
+# ** Note: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(58): VHDL Compiler exiting
+# 
+# 
+# Compile failed
+# Re-compile failed
+# child process exited abnormally
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm.vhd    failed
+# === Command used: ===
+# C:\intelFPGA\23.1std\questa_fse\win64\vcom -quiet -modelsimini C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\vunit_out\modelsim\modelsim.ini -2008 -work vw_lib C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd
+# 
+# === Command output: ===
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Attribute "image" requires a parameter.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Prefix (constant "i") for attribute "image" is not a type mark.
+# 
+# ** Note: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(58): VHDL Compiler exiting
+# 
+# 
+# Compile failed
+# Re-compile failed
+# child process exited abnormally
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm.vhd    failed
+# === Command used: ===
+# C:\intelFPGA\23.1std\questa_fse\win64\vcom -quiet -modelsimini C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\vunit_out\modelsim\modelsim.ini -2008 -work vw_lib C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd
+# 
+# === Command output: ===
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Attribute "image" requires a parameter.
+# 
+# ** Error: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(49): Prefix (constant "i") for attribute "image" is not a type mark.
+# 
+# ** Note: C:\Users\t26607bb\Desktop\Practice\BFM\uart_bfm\uart_bfm.vhd(58): VHDL Compiler exiting
+# 
+# 
+# Compile failed
+# Re-compile failed
+# child process exited abnormally
+vunit_restart
+# Re-compiling using command C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\python.exe -u .\run.py --compile -g vw_lib.uart_bfm_tb.test_1
+# Compiling into vw_lib: uart_bfm.vhd    passed
+# Compiling into vw_lib: uart_bfm_tb.vhd passed
+# Compile passed
+# Re-compile finished
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: data to be transmit: 00000000
+#    Time: 8680556 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 0: 0
+#    Time: 17361112 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 17361112 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 1: 0
+#    Time: 26041668 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 26041668 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 2: 0
+#    Time: 34722224 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 34722224 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 3: 0
+#    Time: 43402780 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 43402780 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 4: 0
+#    Time: 52083336 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 52083336 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 5: 0
+#    Time: 60763892 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 60763892 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 6: 0
+#    Time: 69444448 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000000
+#    Time: 69444448 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 7: 0
+#    Time: 78125004 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 95486116 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 0: 1
+#    Time: 104166672 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 104166672 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 1: 0
+#    Time: 112847228 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 112847228 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 2: 0
+#    Time: 121527784 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 121527784 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 3: 0
+#    Time: 130208340 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 130208340 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 4: 0
+#    Time: 138888896 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 138888896 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 5: 0
+#    Time: 147569452 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 147569452 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 6: 0
+#    Time: 156250008 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000001
+#    Time: 156250008 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 7: 0
+#    Time: 164930564 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 182291676 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 0: 0
+#    Time: 190972232 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 190972232 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 1: 1
+#    Time: 199652788 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 199652788 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 2: 0
+#    Time: 208333344 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 208333344 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 3: 0
+#    Time: 217013900 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 217013900 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 4: 0
+#    Time: 225694456 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 225694456 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 5: 0
+#    Time: 234375012 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 234375012 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 6: 0
+#    Time: 243055568 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000010
+#    Time: 243055568 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 7: 0
+#    Time: 251736124 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 269097236 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 0: 1
+#    Time: 277777792 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 277777792 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 1: 1
+#    Time: 286458348 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 286458348 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 2: 0
+#    Time: 295138904 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 295138904 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 3: 0
+#    Time: 303819460 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 303819460 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 4: 0
+#    Time: 312500016 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 312500016 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 5: 0
+#    Time: 321180572 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 321180572 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 6: 0
+#    Time: 329861128 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000011
+#    Time: 329861128 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 7: 0
+#    Time: 338541684 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 355902796 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 0: 0
+#    Time: 364583352 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 364583352 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 1: 0
+#    Time: 373263908 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 373263908 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 2: 1
+#    Time: 381944464 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 381944464 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 3: 0
+#    Time: 390625020 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 390625020 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 4: 0
+#    Time: 399305576 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 399305576 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 5: 0
+#    Time: 407986132 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 407986132 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 6: 0
+#    Time: 416666688 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000100
+#    Time: 416666688 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 7: 0
+#    Time: 425347244 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 442708356 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 0: 1
+#    Time: 451388912 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 451388912 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 1: 0
+#    Time: 460069468 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 460069468 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 2: 1
+#    Time: 468750024 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 468750024 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 3: 0
+#    Time: 477430580 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 477430580 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 4: 0
+#    Time: 486111136 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 486111136 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 5: 0
+#    Time: 494791692 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 494791692 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 6: 0
+#    Time: 503472248 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: data to be transmit: 00000101
+#    Time: 503472248 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# ** Note: bit 7: 0
+#    Time: 512152804 ps  Iteration: 0  Instance: /uart_bfm_tb/DUT
+# Break in Subprogram stop at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/run/src/run.vhd line 132
+# false
+# End time: 17:13:55 on Feb 28,2024, Elapsed time: 0:39:12
+# Errors: 0, Warnings: 1

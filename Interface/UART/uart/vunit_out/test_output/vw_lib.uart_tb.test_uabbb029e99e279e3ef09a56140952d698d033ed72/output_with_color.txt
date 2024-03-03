@@ -1,0 +1,237 @@
+# vsim -modelsimini C:/Users/t26607bb/Desktop/Interface_Course/FPGA_Projects/Interface/UART/uart/vunit_out/modelsim/modelsim.ini -wlf C:/Users/t26607bb/Desktop/Interface_Course/FPGA_Projects/Interface/UART/uart/vunit_out/test_output/vw_lib.uart_tb.test_uabbb029e99e279e3ef09a56140952d698d033ed72/modelsim/vsim.wlf -quiet -t ps -onfinish stop vw_lib.uart_tb(sim) -L vunit_lib -L vw_lib -g/uart_tb/runner_cfg="active python runner : true,enabled_test_cases : test_uart_tx,output path : C::/Users/t26607bb/Desktop/Interface_Course/FPGA_Projects/Interface/UART/uart/vunit_out/test_output/vw_lib.uart_tb.test_uabbb029e99e279e3ef09a56140952d698d033ed72/,tb path : C::/Users/t26607bb/Desktop/Interface_Course/FPGA_Projects/Interface/UART/uart/,use_color : true" 
+# Start time: 15:49:07 on Mar 03,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\Lib\site-packages\vunit\vhdl\string_ops\src\string_ops.vhd(456): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Warning: C:\Users\t26607bb\AppData\Local\Programs\Python\Python310\Lib\site-packages\vunit\vhdl\string_ops\src\string_ops.vhd(533): (vopt-1083) Implicit array operator "=" always returns FALSE (left length 1 is not equal to right length 0).
+# ** Warning: C:\Users\t26607bb\Desktop\Interface_Course\FPGA_Projects\Interface\UART\uart\UART_Rx.vhd(127): (vopt-1167) Index value 9 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 8 downto 0.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Note: i_rx at idle: U
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+#         [22;96;49m20000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000001
+# ** Note: bit 0: 1
+#    Time: 13060834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 21741390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 30421946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 39102502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 47783058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 56463614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 65144170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 73824726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000001
+#    Time: 82505282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 82505282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#      [22;96;49m86960000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000010
+# ** Note: bit 0: 0
+#    Time: 100000834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 108681390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 117361946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 126042502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 134723058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 143403614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 152084170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 160764726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000010
+#    Time: 169445282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 169445282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m173900000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000011
+# ** Note: bit 0: 1
+#    Time: 186940834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 195621390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 204301946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 212982502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 221663058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 230343614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 239024170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 247704726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000011
+#    Time: 256385282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 256385282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m260840000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000100
+# ** Note: bit 0: 0
+#    Time: 273880834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 282561390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 291241946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 299922502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 308603058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 317283614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 325964170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 334644726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000100
+#    Time: 343325282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 343325282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m347780000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000101
+# ** Note: bit 0: 1
+#    Time: 360820834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 369501390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 378181946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 386862502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 395543058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 404223614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 412904170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 421584726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000101
+#    Time: 430265282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 430265282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m434720000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000110
+# ** Note: bit 0: 0
+#    Time: 447760834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 456441390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 465121946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 473802502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 482483058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 491163614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 499844170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 508524726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000110
+#    Time: 517205282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 517205282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m521660000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00000111
+# ** Note: bit 0: 1
+#    Time: 534700834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 543381390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 1
+#    Time: 552061946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 0
+#    Time: 560742502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 569423058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 578103614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 586784170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 595464726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00000111
+#    Time: 604145282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 604145282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m608600000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00001000
+# ** Note: bit 0: 0
+#    Time: 621640834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 630321390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 639001946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 1
+#    Time: 647682502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 656363058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 665043614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 673724170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 682404726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00001000
+#    Time: 691085282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 691085282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m695540000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00001001
+# ** Note: bit 0: 1
+#    Time: 708580834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 0
+#    Time: 717261390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 725941946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 1
+#    Time: 734622502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 743303058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 751983614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 760664170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 769344726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00001001
+#    Time: 778025282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 778025282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m782480000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - Transmitted data: 00001010
+# ** Note: bit 0: 0
+#    Time: 795520834 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 1: 1
+#    Time: 804201390 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 2: 0
+#    Time: 812881946 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 3: 1
+#    Time: 821562502 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 4: 0
+#    Time: 830243058 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 5: 0
+#    Time: 838923614 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 6: 0
+#    Time: 847604170 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: bit 7: 0
+#    Time: 856284726 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: received data: 00001010
+#    Time: 864965282 ps  Iteration: 0  Instance: /uart_tb/UART_BFM_INST
+# ** Note: i_rx at idle: 1
+#    Time: 864965282 ps  Iteration: 1  Instance: /uart_tb/UART_BFM_INST
+#     [22;96;49m869410000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - UART_Tx tested successfully!!!
+#     [22;96;49m869410000 ps[0m - [1;37;49mdefault[0m              -    [1;37;49mINFO[0m - UART_Rx tested successfully!!!
+# Break in Subprogram stop at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at C:/Users/t26607bb/AppData/Local/Programs/Python/Python310/Lib/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
