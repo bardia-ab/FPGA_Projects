@@ -1,3 +1,5 @@
+from pathlib import Path
+
 class Parameter:
 
     def __init__(self, name, value):
@@ -82,11 +84,11 @@ class Module:
     
 
 if __name__ == '__main__':
-    l_idx = 1
-    num_neurons = 30
+    l_idx = 4
+    num_neurons = 10
     layer_1 = Module(f'layer_{l_idx}')
     parameters_1 = [('NUM_NEURON', 30), ('LAYER_ID', 1), ('NUM_WEIGHT', 784), ('DATA_WIDTH', 16), ('SIGMOID_SIZE', 10), ('ACT_TYPE', '"SIGMOID"')]
-    IOs_1 = [('i_clk', 'input'), ('i_reset', 'input'), ('i_input', 'input', 'DATA_WIDTH'), ('i_input_valid', 'input'), ('o_input_ready', 'output'),
+    IOs_1 = [('i_clk', 'input'), ('i_reset', 'input'), ('i_input', 'input', 'DATA_WIDTH'), ('i_input_valid', 'input'), ('o_input_ready', 'output', 'NUM_NEURON'),
              ('i_weight', 'input', 32), ('i_weight_valid', 'input'), ('i_bias', 'input', 32), ('i_bias_valid', 'input'), ('i_layer_id', 'input', 32),
              ('i_neuron_id', 'input', 32), ('o_output', 'output', 'NUM_NEURON * DATA_WIDTH'), ('o_output_valid', 'output', 'NUM_NEURON')]
 
@@ -106,14 +108,18 @@ if __name__ == '__main__':
                 ('i_weight', 'input', 32), ('i_weight_valid', 'input'), ('i_bias', 'input', 32), ('i_bias_valid', 'input'), ('i_layer_id', 'input', 32),
                 ('i_neuron_id', 'input', 32), ('o_output', 'output', 'DATA_WIDTH'), ('o_output_valid', 'output')]
 
-        parameter_inst_values = ['LAYER_ID', 0, 'NUM_WEIGHT', 'DATA_WIDTH', 'SIGMOID_SIZE', 'ACT_TYPE', f'"w_{l_idx}_{i}.mif"', f'"b_{l_idx}_{i}.mif"', '"sig_contents.mif"']
+        
+        BIAS_FILE = '"' + (Path(__file__).parents[1] / 'MIF' / f"b_{l_idx}_{i}.mif").as_posix() + '"'
+        WEIGHT_FILE = '"' + (Path(__file__).parents[1] / 'MIF' / f"w_{l_idx}_{i}.mif").as_posix() + '"'
+        SIGMOID_FILE = '"' + (Path(__file__).parents[1] / 'MIF' / "sig_contents.mif").as_posix()+ '"'
+        parameter_inst_values = ['LAYER_ID', i, 'NUM_WEIGHT', 'DATA_WIDTH', 'SIGMOID_SIZE', 'ACT_TYPE', WEIGHT_FILE, BIAS_FILE, SIGMOID_FILE]
         
         for idx, param in enumerate(parameters):
             param_inst = Parameter(*param)
             param_inst.add_instantiate_value(parameter_inst_values[idx])
             neuron.add_parameter(param_inst)
 
-        io_inst_values = ['i_clk', 'i_reset', 'i_input', 'i_input_valid', 'o_input_ready', 'i_weight', 'i_weight_valid', 'i_bias', 'i_bias_valid', 'i_layer_id', 'i_neuron_id', f'o_output[{i} * DATA_WIDTH +: DATA_WIDTH]', f'o_output_valid[{i}]']
+        io_inst_values = ['i_clk', 'i_reset', 'i_input', 'i_input_valid', f'o_input_ready[{i}]', 'i_weight', 'i_weight_valid', 'i_bias', 'i_bias_valid', 'i_layer_id', 'i_neuron_id', f'o_output[{i} * DATA_WIDTH +: DATA_WIDTH]', f'o_output_valid[{i}]']
         
         for idx, io in enumerate(IOs):
             io_inst = IO(*io)

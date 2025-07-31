@@ -4,7 +4,7 @@ module layer_3 #(parameter NUM_NEURON = 30, LAYER_ID = 1, NUM_WEIGHT = 784, DATA
 	input i_reset,
 	input [DATA_WIDTH - 1:0] i_input,
 	input i_input_valid,
-	output o_input_ready,
+	output [NUM_NEURON - 1:0] o_input_ready,
 	input [31:0] i_weight,
 	input i_weight_valid,
 	input [31:0] i_bias,
@@ -15,12 +15,12 @@ module layer_3 #(parameter NUM_NEURON = 30, LAYER_ID = 1, NUM_WEIGHT = 784, DATA
 	output [NUM_NEURON - 1:0] o_output_valid
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_0.mif"), .BIAS_FILE("b_3_0.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_0 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_0.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_0.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_0 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[0]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -31,12 +31,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[0])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_1.mif"), .BIAS_FILE("b_3_1.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_1 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(1), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_1.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_1.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_1 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[1]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -47,12 +47,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[1])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_2.mif"), .BIAS_FILE("b_3_2.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_2 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(2), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_2.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_2.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_2 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[2]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -63,12 +63,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[2])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_3.mif"), .BIAS_FILE("b_3_3.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_3 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(3), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_3.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_3.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_3 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[3]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -79,12 +79,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[3])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_4.mif"), .BIAS_FILE("b_3_4.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_4 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(4), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_4.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_4.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_4 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[4]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -95,12 +95,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[4])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_5.mif"), .BIAS_FILE("b_3_5.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_5 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(5), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_5.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_5.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_5 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[5]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -111,12 +111,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[5])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_6.mif"), .BIAS_FILE("b_3_6.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_6 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(6), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_6.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_6.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_6 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[6]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -127,12 +127,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[6])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_7.mif"), .BIAS_FILE("b_3_7.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_7 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(7), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_7.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_7.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_7 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[7]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -143,12 +143,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[7])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_8.mif"), .BIAS_FILE("b_3_8.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_8 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(8), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_8.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_8.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_8 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[8]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),
@@ -159,12 +159,12 @@ neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDT
 	.o_output_valid(o_output_valid[8])
 );
 
-neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(0), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("w_3_9.mif"), .BIAS_FILE("b_3_9.mif"), .SIGMOID_FILE("sig_contents.mif")) neuron_9 (
+neuron #(.LAYER_ID(LAYER_ID), .NEURON_ID(9), .NUM_WEIGHT(NUM_WEIGHT), .DATA_WIDTH(DATA_WIDTH), .SIGMOID_SIZE(SIGMOID_SIZE), .ACT_TYPE(ACT_TYPE), .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/w_3_9.mif"), .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/b_3_9.mif"), .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Surrey/FPGA_Projects/neural_network/MIF/sig_contents.mif")) neuron_9 (
 	.i_clk(i_clk),
 	.i_reset(i_reset),
 	.i_input(i_input),
 	.i_input_valid(i_input_valid),
-	.o_input_ready(o_input_ready),
+	.o_input_ready(o_input_ready[9]),
 	.i_weight(i_weight),
 	.i_weight_valid(i_weight_valid),
 	.i_bias(i_bias),

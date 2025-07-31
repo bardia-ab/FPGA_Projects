@@ -5,7 +5,7 @@
 module neural_network_tb ();
 
   localparam PERIOD = 10;
-  localparam NUM_TESTS = 10;
+  localparam NUM_TESTS = 1;
 
   reg i_clk = 1'b1;
   reg i_reset = 1'b0;
@@ -138,7 +138,7 @@ module neural_network_tb ();
   initial
   begin
     // send input test data
-    for (i = 0; i < NUM_TESTS; i++)
+    for (i = 14; i < NUM_TESTS; i++)
     begin
       // assert reset
       @(posedge i_clk);

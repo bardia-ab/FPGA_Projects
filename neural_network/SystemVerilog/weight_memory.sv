@@ -8,7 +8,7 @@ module weight_memory #(parameter DATA_WIDTH = 16, ADDR_WIDTH = 10, WEIGHT_FILE =
   input i_wen,
   input [DATA_WIDTH - 1:0] i_data,
   input [ADDR_WIDTH - 1:0] i_waddr,
-  output o_wvalid,
+  output o_wready,
   // read interface
   input i_ren,
   input [ADDR_WIDTH - 1:0] i_raddr,
@@ -19,7 +19,7 @@ module weight_memory #(parameter DATA_WIDTH = 16, ADDR_WIDTH = 10, WEIGHT_FILE =
   // signals
   logic [DATA_WIDTH - 1:0] r_data;
   logic [DATA_WIDTH - 1:0] r_mem [0: 2 ** ADDR_WIDTH];
-  logic r_wvalid;
+  logic r_wready;
   logic r_rvalid;
 
   `ifdef PRETRAINED
@@ -27,11 +27,11 @@ module weight_memory #(parameter DATA_WIDTH = 16, ADDR_WIDTH = 10, WEIGHT_FILE =
       $readmemb(WEIGHT_FILE, r_mem);
   `else
     always_ff @(posedge i_clk) begin
-      r_wvalid <= 1'b0;
+      r_wready <= 1'b1;
 
       if (i_wen) begin
         r_mem[i_waddr] <= i_data;
-        r_wvalid <= 1'b1;
+        // r_wready <= 1'b0;
       end
     end
   `endif
@@ -47,7 +47,7 @@ module weight_memory #(parameter DATA_WIDTH = 16, ADDR_WIDTH = 10, WEIGHT_FILE =
 
   // output assignments
   assign o_data = r_data;
-  assign o_wvalid = r_wvalid;
+  assign o_wready = r_wready;
   assign o_rvalid = r_rvalid;
 
 endmodule

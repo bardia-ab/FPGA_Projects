@@ -26,13 +26,13 @@ module neuron_tb();
 neuron # (
   .LAYER_ID(1),
   .NEURON_ID(0),
-  .NUM_WEIGHT(`NUM_WEIGHT),
+  .NUM_WEIGHT(`NUM_WEIGHT_L1),
   .DATA_WIDTH(`DATA_WIDTH),
   .SIGMOID_SIZE(`SIGMOID_SIZE),
-  .ACT_TYPE(`ACT_TYPE),
-  .WEIGHT_FILE("C:/Users/t26607bb/Desktop/Practice/Embedded/NeuralNetwork/MIF/w_1_0.mif"),
-  .BIAS_FILE("C:/Users/t26607bb/Desktop/Practice/Embedded/NeuralNetwork/MIF/b_1_0.mif"),
-  .SIGMOID_FILE("C:/Users/t26607bb/Desktop/Practice/Embedded/NeuralNetwork/MIF/sig_content.mif")
+  .ACT_TYPE(`ACT_TYPE_L1),
+  .WEIGHT_FILE("../MIF/w_1_0.mif"),
+  .BIAS_FILE("../MIF/b_1_0.mif"),
+  .SIGMOID_FILE("../MIF/sig_content.mif")
 )
 neuron_inst (
   .i_clk(i_clk),
@@ -57,7 +57,7 @@ neuron_inst (
     @(posedge i_clk);
     i_reset = 1'b0;
 
-    for (integer i=0; i <= `NUM_WEIGHT; i++) begin
+    for (integer i=0; i <= `NUM_WEIGHT_L1; i++) begin
       $display("i: %0d\t time: %0t\n", i, $time);
       @(posedge i_clk);
       @(posedge o_input_ready)

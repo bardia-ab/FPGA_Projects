@@ -33,7 +33,7 @@ module max_finder # (parameter N_PARALLEL = 30, DATA_WIDTH = 16) (
   always_ff @(posedge i_clk)
     if (i_reset) begin
       r_state <= s_IDLE;
-      r_cntr <= N_PARALLEL - 1;
+      r_cntr <= 0;
       r_max <= 0;
       r_ready <= 1'b1;
       r_valid <= 1'b0;
@@ -47,15 +47,16 @@ module max_finder # (parameter N_PARALLEL = 30, DATA_WIDTH = 16) (
           if (i_valid) begin
             r_buffer <= i_data;
             r_max <= i_data[r_cntr * DATA_WIDTH +: DATA_WIDTH];
-            r_cntr <= r_cntr - 1;
+            r_data <= 0;
+            r_cntr <= r_cntr + 1;
             r_ready <= 1'b0;
             r_state <= s_COMPARE;
           end
         end
 
         s_COMPARE: begin
-          if (r_cntr > 0) begin
-            r_cntr <= r_cntr - 1;
+          if (r_cntr < N_PARALLEL) begin
+            r_cntr <= r_cntr + 1;
             
             if (i_data[r_cntr * DATA_WIDTH +: DATA_WIDTH] > r_max) begin
               r_max <= i_data[r_cntr * DATA_WIDTH +: DATA_WIDTH];
@@ -63,7 +64,7 @@ module max_finder # (parameter N_PARALLEL = 30, DATA_WIDTH = 16) (
             end
           end
           else begin
-            r_cntr <= N_PARALLEL - 1;
+            r_cntr <= 0;
             r_valid <= 1'b1;
             r_state <= s_IDLE;
           end
